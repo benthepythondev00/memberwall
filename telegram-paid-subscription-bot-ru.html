@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Как сделать платный канал в Telegram с оплатой в Telegram Stars · Memberwall</title>
-  <meta name="description" content="Пошагово: как брать ежемесячную плату за закрытый канал в Telegram через Telegram Stars, сколько вы получите и где встроенный способ заканчивается." />
+  <title>Бот для платной подписки на Telegram-канал или группу · Memberwall</title>
+  <meta name="description" content="Memberwall: бот для платного доступа в канал или группу Telegram. Подписка в Telegram Stars или прямая оплата автору, автоматические приглашения, напоминания и удаление." />
   <meta name="theme-color" content="#07070b" />
   <link rel="icon" href="static/favicon.svg" type="image/svg+xml" />
   <meta property="og:title" content="Memberwall: paid Telegram memberships" />
@@ -15,10 +15,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="static/css/app.css?v=2" />
   
-  <link rel="canonical" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars-ru.html" />
-  <link rel="alternate" hreflang="en" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars.html" />
-  <link rel="alternate" hreflang="ru" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars-ru.html" />
-  <link rel="alternate" hreflang="uz" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars-uz.html" />
+  <link rel="canonical" href="https://benthepythondev00.github.io/memberwall/telegram-paid-subscription-bot-ru.html" />
+  <link rel="alternate" hreflang="ru" href="https://benthepythondev00.github.io/memberwall/telegram-paid-subscription-bot-ru.html" />
+  <link rel="alternate" hreflang="uz" href="https://benthepythondev00.github.io/memberwall/telegram-paid-subscription-bot-uz.html" />
   
   <style>
     .prose ul, .prose ol { padding-left: 1.4rem; }
@@ -58,49 +57,49 @@
 <article class="prose max-w-3xl mx-auto px-5 py-16 text-zinc-300 leading-relaxed">
   
   <div class="text-sm text-zinc-500">
-    <a href="paid-telegram-channel-stars.html" class="hover:text-white transition">English</a> · <span class="text-white">Русский</span> · <a href="paid-telegram-channel-stars-uz.html" class="hover:text-white transition">O&#39;zbekcha</a>
+    <span class="text-white">Русский</span> · <a href="telegram-paid-subscription-bot-uz.html" class="hover:text-white transition">O&#39;zbekcha</a>
   </div>
   
-  <h1 class="mt-3 font-display text-4xl font-bold text-white">Как сделать платный канал в Telegram с оплатой в Telegram Stars</h1>
-  <p class="mt-5 text-lg text-zinc-400">В Telegram есть собственный способ брать плату за канал: платная ссылка-приглашение. Подписчики платят в Telegram Stars каждые 30 дней, и Telegram сам пускает их в канал. Ниже: как это настроить, что нужно знать заранее и где помогает бот.</p>
+  <h1 class="mt-3 font-display text-4xl font-bold text-white">Бот для платной подписки на Telegram-канал или группу</h1>
+  <p class="mt-5 text-lg text-zinc-400">Memberwall продаёт доступ в ваш закрытый канал или группу и сам ведёт участников: выдаёт ссылку после оплаты, напоминает о продлении и убирает тех, у кого срок закончился. Деньги при этом не проходят через сервис.</p>
 
   
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Встроенный способ, по шагам</h2>
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Три способа работы</h2>
   
-    <ol class="mt-3"><li>Сделайте канал закрытым.</li><li>Откройте настройки канала, перейдите к пригласительным ссылкам и создайте новую.</li><li>Включите ежемесячную плату и укажите цену в Stars.</li><li>Поделитесь ссылкой. Каждый, кто её откроет, увидит предложение оплатить и попадёт в канал после оплаты.</li></ol>
-    
-  
-    <p class="mt-3">Названия пунктов немного отличаются в телефоне и на компьютере, но эта настройка везде находится рядом с пригласительными ссылками.</p>
+    <ul class="mt-3"><li>Канал без своего бота. Вы добавляете @MemberwallBot в канал администратором и задаёте цену. Участники входят по платной ссылке Telegram, Stars зачисляются на баланс канала.</li><li>Свой бот и подписка в Stars. Вы создаёте бота в @BotFather и подключаете его. Участники платят вашему боту, Stars зачисляются ему. Подходит и для групп.</li><li>Свой бот и прямая оплата. Участник платит вам переводом, картой или через местное приложение и отправляет боту чек. Вы подтверждаете его одним нажатием.</li></ul>
     
   
   
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Что нужно знать заранее</h2>
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Что бот делает сам</h2>
   
-    <ul class="mt-3"><li>Период всегда 30 дней. Недели, года или разовой оплаты нет.</li><li>Stars зачисляются на баланс канала, вывод идёт через Telegram.</li><li>Новые Stars могут стать доступны для вывода не сразу, срок до 21 дня.</li><li>Подписчик, который покупает Stars в мобильном приложении, платит заметно больше, чем получаете вы: свою долю берут магазины приложений.</li><li>Telegram сам удаляет тех, у кого подписка закончилась.</li></ul>
+    <ul class="mt-3"><li>Отправляет каждому участнику личную одноразовую ссылку-приглашение.</li><li>Напоминает за 3 дня и за 1 день до конца оплаченного срока.</li><li>Удаляет участника, когда срок истёк, и снова пускает после новой оплаты.</li><li>Показывает автору число активных участников и сумму Stars за последние 30 дней.</li></ul>
     
   
   
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Где встроенный способ заканчивается</h2>
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Отмена и возврат</h2>
   
-    <ul class="mt-3"><li>Он работает только для каналов, не для групп.</li><li>Платить можно только в Stars. Если ваша аудитория платит картой, переводом или через местное приложение, она остаётся за бортом.</li><li>Нет простой сводки: сколько у вас участников и сколько они заплатили за месяц.</li></ul>
+    <p class="mt-3">Подписчик на Stars отключает продление одним нажатием в вашем боте и сохраняет доступ до конца оплаченного периода. Автор видит каждый платёж в Stars и может вернуть его одной кнопкой. Оба сценария проверены на работающем боте в октябре 2026 года.</p>
     
   
   
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Что добавляет Memberwall</h2>
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Чего здесь нет</h2>
   
-    <p class="mt-3">Добавьте @MemberwallBot в канал администратором и отправьте ему цену. Он создаст такую же платную ссылку и будет вести учёт: в одном сообщении видно, сколько у вас участников и сколько Stars они заплатили за последние 30 дней.</p>
+    <ul class="mt-3"><li>Оплаты картой внутри бота. Картой участник платит вам напрямую, а вы подтверждаете чек.</li><li>Автоматической проверки переводов. Чек смотрите вы.</li><li>Купонов, пробных периодов и подробной аналитики.</li><li>Мгновенного вывода Stars: Telegram открывает их для вывода через 21 день.</li></ul>
     
   
-    <p class="mt-3">Для группы или для тех, кто не может платить в Stars, вы подключаете собственного бота. Участники платят вам напрямую, отправляют боту чек, а вы подтверждаете его одним нажатием. Бот отправляет каждому личную ссылку-приглашение, напоминает перед окончанием срока и удаляет участника, когда срок истёк.</p>
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Как начать</h2>
+  
+    <ol class="mt-3"><li>Откройте @MemberwallBot и нажмите «Старт».</li><li>Для канала: добавьте бота администратором и отправьте /price и цену в Stars.</li><li>Для группы или прямой оплаты: создайте бота в @BotFather, отправьте его токен в @MemberwallBot и добавьте своего бота администратором.</li><li>Язык сообщений для участников задаётся командой /lang: русский, узбекский или английский.</li></ol>
     
   
-    <p class="mt-3">В собственном боте подписчик на Stars отключает продление одним нажатием и сохраняет доступ до конца оплаченного периода. Вы видите каждый платёж в Stars сразу и можете вернуть его одним нажатием.</p>
+    <p class="mt-3">Если что-то не получается, отправьте в @MemberwallBot команду /help и свой вопрос. Вам ответит человек и поможет с настройкой письменно, для первых клиентов бесплатно.</p>
     
   
   
 
   <div class="mt-10 glass rounded-2xl p-6 text-center">
-    <a href="https://t.me/MemberwallBot?start=src_stars_ru" class="btn-primary inline-block rounded-xl px-6 py-3 text-white font-semibold">Открыть @MemberwallBot</a>
+    <a href="https://t.me/MemberwallBot?start=src_bot_ru" class="btn-primary inline-block rounded-xl px-6 py-3 text-white font-semibold">Открыть @MemberwallBot</a>
     <p class="mt-3 text-sm text-zinc-400">Начать можно бесплатно. Всё настраивается прямо в чате.</p>
   </div>
   

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Как сделать платный канал в Telegram с оплатой в Telegram Stars · Memberwall</title>
-  <meta name="description" content="Пошагово: как брать ежемесячную плату за закрытый канал в Telegram через Telegram Stars, сколько вы получите и где встроенный способ заканчивается." />
+  <title>Отмена и возврат подписки в Telegram Stars: как это устроено · Memberwall</title>
+  <meta name="description" content="Как подписчик отменяет подписку в Telegram Stars, что происходит с доступом, как автор возвращает платёж в Stars и как это сделано в Memberwall." />
   <meta name="theme-color" content="#07070b" />
   <link rel="icon" href="static/favicon.svg" type="image/svg+xml" />
   <meta property="og:title" content="Memberwall: paid Telegram memberships" />
@@ -15,10 +15,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="static/css/app.css?v=2" />
   
-  <link rel="canonical" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars-ru.html" />
-  <link rel="alternate" hreflang="en" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars.html" />
-  <link rel="alternate" hreflang="ru" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars-ru.html" />
-  <link rel="alternate" hreflang="uz" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars-uz.html" />
+  <link rel="canonical" href="https://benthepythondev00.github.io/memberwall/cancel-refund-telegram-stars-subscription-ru.html" />
+  <link rel="alternate" hreflang="ru" href="https://benthepythondev00.github.io/memberwall/cancel-refund-telegram-stars-subscription-ru.html" />
+  <link rel="alternate" hreflang="uz" href="https://benthepythondev00.github.io/memberwall/cancel-refund-telegram-stars-subscription-uz.html" />
   
   <style>
     .prose ul, .prose ol { padding-left: 1.4rem; }
@@ -58,49 +57,46 @@
 <article class="prose max-w-3xl mx-auto px-5 py-16 text-zinc-300 leading-relaxed">
   
   <div class="text-sm text-zinc-500">
-    <a href="paid-telegram-channel-stars.html" class="hover:text-white transition">English</a> · <span class="text-white">Русский</span> · <a href="paid-telegram-channel-stars-uz.html" class="hover:text-white transition">O&#39;zbekcha</a>
+    <span class="text-white">Русский</span> · <a href="cancel-refund-telegram-stars-subscription-uz.html" class="hover:text-white transition">O&#39;zbekcha</a>
   </div>
   
-  <h1 class="mt-3 font-display text-4xl font-bold text-white">Как сделать платный канал в Telegram с оплатой в Telegram Stars</h1>
-  <p class="mt-5 text-lg text-zinc-400">В Telegram есть собственный способ брать плату за канал: платная ссылка-приглашение. Подписчики платят в Telegram Stars каждые 30 дней, и Telegram сам пускает их в канал. Ниже: как это настроить, что нужно знать заранее и где помогает бот.</p>
+  <h1 class="mt-3 font-display text-4xl font-bold text-white">Отмена и возврат подписки в Telegram Stars: как это устроено</h1>
+  <p class="mt-5 text-lg text-zinc-400">Подписчики платных каналов чаще всего жалуются на две вещи: подписку не удаётся отменить, а деньги не возвращают. У подписок в Telegram Stars для обеих ситуаций есть штатные механизмы. Ниже: как они работают для подписчика и для автора.</p>
 
   
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Встроенный способ, по шагам</h2>
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Как отменяет подписчик</h2>
   
-    <ol class="mt-3"><li>Сделайте канал закрытым.</li><li>Откройте настройки канала, перейдите к пригласительным ссылкам и создайте новую.</li><li>Включите ежемесячную плату и укажите цену в Stars.</li><li>Поделитесь ссылкой. Каждый, кто её откроет, увидит предложение оплатить и попадёт в канал после оплаты.</li></ol>
-    
-  
-    <p class="mt-3">Названия пунктов немного отличаются в телефоне и на компьютере, но эта настройка везде находится рядом с пригласительными ссылками.</p>
+    <ul class="mt-3"><li>Подписки в Stars оформляются на 30 дней и продлеваются автоматически.</li><li>Подписчик может отменить продление сам, а до конца периода включить его снова.</li><li>После отмены доступ остаётся до конца оплаченного периода.</li></ul>
     
   
   
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Что нужно знать заранее</h2>
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Что может автор через своего бота</h2>
   
-    <ul class="mt-3"><li>Период всегда 30 дней. Недели, года или разовой оплаты нет.</li><li>Stars зачисляются на баланс канала, вывод идёт через Telegram.</li><li>Новые Stars могут стать доступны для вывода не сразу, срок до 21 дня.</li><li>Подписчик, который покупает Stars в мобильном приложении, платит заметно больше, чем получаете вы: свою долю берут магазины приложений.</li><li>Telegram сам удаляет тех, у кого подписка закончилась.</li></ul>
+    <ul class="mt-3"><li>Отключить продление за подписчика.</li><li>Вернуть платёж в Stars. Они возвращаются подписчику.</li></ul>
+    
+  
+    <p class="mt-3">Обе возможности есть в официальном Bot API Telegram. Это значит, что автору не нужно пересылать подписчика в поддержку стороннего сервиса.</p>
     
   
   
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Где встроенный способ заканчивается</h2>
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Как это сделано в Memberwall</h2>
   
-    <ul class="mt-3"><li>Он работает только для каналов, не для групп.</li><li>Платить можно только в Stars. Если ваша аудитория платит картой, переводом или через местное приложение, она остаётся за бортом.</li><li>Нет простой сводки: сколько у вас участников и сколько они заплатили за месяц.</li></ul>
+    <ul class="mt-3"><li>Подписчик с активной подпиской видит в вашем боте кнопку «Отменить подписку». Одно нажатие отключает продление, доступ остаётся до конца периода.</li><li>Автор получает в своём боте сообщение о каждом платеже в Stars с кнопкой возврата. После подтверждения Stars возвращаются, продление отключается, участник удаляется.</li><li>Вернуть платёж может только владелец бота.</li></ul>
+    
+  
+    <p class="mt-3">Оба сценария проверены на работающем боте в октябре 2026 года.</p>
     
   
   
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Что добавляет Memberwall</h2>
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Где это не действует</h2>
   
-    <p class="mt-3">Добавьте @MemberwallBot в канал администратором и отправьте ему цену. Он создаст такую же платную ссылку и будет вести учёт: в одном сообщении видно, сколько у вас участников и сколько Stars они заплатили за последние 30 дней.</p>
-    
-  
-    <p class="mt-3">Для группы или для тех, кто не может платить в Stars, вы подключаете собственного бота. Участники платят вам напрямую, отправляют боту чек, а вы подтверждаете его одним нажатием. Бот отправляет каждому личную ссылку-приглашение, напоминает перед окончанием срока и удаляет участника, когда срок истёк.</p>
-    
-  
-    <p class="mt-3">В собственном боте подписчик на Stars отключает продление одним нажатием и сохраняет доступ до конца оплаченного периода. Вы видите каждый платёж в Stars сразу и можете вернуть его одним нажатием.</p>
+    <ul class="mt-3"><li>Прямые платежи (перевод, карта, местное приложение) бот вернуть не может: деньги уже у автора, и возврат он делает сам.</li><li>Кнопка возврата есть для платежей, которые прошли через собственного бота автора.</li></ul>
     
   
   
 
   <div class="mt-10 glass rounded-2xl p-6 text-center">
-    <a href="https://t.me/MemberwallBot?start=src_stars_ru" class="btn-primary inline-block rounded-xl px-6 py-3 text-white font-semibold">Открыть @MemberwallBot</a>
+    <a href="https://t.me/MemberwallBot?start=src_refund_ru" class="btn-primary inline-block rounded-xl px-6 py-3 text-white font-semibold">Открыть @MemberwallBot</a>
     <p class="mt-3 text-sm text-zinc-400">Начать можно бесплатно. Всё настраивается прямо в чате.</p>
   </div>
   
