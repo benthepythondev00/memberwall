@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pricing · Memberwall</title>
-  <meta name="description" content="Memberwall sells paid access to your Telegram channel or group. Members pay in Telegram Stars; they are added, reminded and removed automatically." />
+  <title>A paid Telegram group without Stripe: let members pay you directly · Memberwall</title>
+  <meta name="description" content="How to run a paid Telegram group or channel when Stripe is not available: members pay by bank card, a local payment app or PayPal, you approve the receipt, and a bot does the rest." />
   <meta name="theme-color" content="#07070b" />
   <link rel="icon" href="static/favicon.svg" type="image/svg+xml" />
   <meta property="og:title" content="Memberwall: paid Telegram memberships" />
@@ -15,6 +15,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="static/css/app.css?v=2" />
   
+  <link rel="canonical" href="https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe.html" />
+  <link rel="alternate" hreflang="en" href="https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe.html" />
+  <link rel="alternate" hreflang="ru" href="https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe-ru.html" />
+  <link rel="alternate" hreflang="uz" href="https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe-uz.html" />
+  
+  <style>
+    .prose ul, .prose ol { padding-left: 1.4rem; }
+    .prose ul { list-style: disc; } .prose ol { list-style: decimal; }
+    .prose li { margin-top: .5rem; }
+    .prose td, .prose th { padding: .75rem 1rem .75rem 0; vertical-align: top; }
+  </style>
+
 </head>
 <body class="min-h-screen flex flex-col antialiased">
   <div class="aurora"></div>
@@ -43,75 +55,50 @@
   <main class="flex-1">
     
     
-<section class="max-w-6xl mx-auto px-5 py-16">
-  <h1 class="reveal font-display text-4xl font-bold text-center">Flat pricing, paid in Telegram Stars</h1>
-  <p class="reveal mt-3 text-center text-zinc-400">A flat fee per 30 days. Never a percentage of what your members pay you.</p>
-
-  <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-    
-    <div class="reveal glass rounded-2xl p-6 flex flex-col ">
-      
-      <h2 class="font-display text-xl font-semibold text-white">Free</h2>
-      <div class="mt-3 font-display text-4xl font-bold text-white">0<span class="text-base font-normal text-zinc-500"> Stars / 30 days</span></div>
-      <p class="mt-2 text-sm text-zinc-400">Start and sign up your first members.</p>
-      <ul class="mt-5 space-y-2 text-sm text-zinc-300 flex-1">
-        <li>✓ Up to 23,000 Stars of member sales or 20 direct payments per 30 days</li><li>✓ Your own bot, automatic invites and removals</li><li>✓ A &#34;Powered by Memberwall&#34; line on your offer</li>
-      </ul>
-      <a href="https://t.me/MemberwallBot?start=src_site" class="mt-7 rounded-xl text-center px-4 py-2.5 font-semibold transition
-        border border-white/15 text-zinc-200 hover:bg-white/5">
-        Start with Free
-      </a>
-    </div>
-    
-    <div class="reveal glass rounded-2xl p-6 flex flex-col border-glow">
-      <div class="mb-3 text-xs font-semibold uppercase tracking-wider text-violet-300">Most popular</div>
-      <h2 class="font-display text-xl font-semibold text-white">Starter</h2>
-      <div class="mt-3 font-display text-4xl font-bold text-white">1,500<span class="text-base font-normal text-zinc-500"> Stars / 30 days</span></div>
-      <p class="mt-2 text-sm text-zinc-400">For a channel that earns.</p>
-      <ul class="mt-5 space-y-2 text-sm text-zinc-300 flex-1">
-        <li>✓ Up to 115,000 Stars of member sales or 100 direct payments per 30 days</li><li>✓ No Memberwall line on your offer</li>
-      </ul>
-      <a href="https://t.me/MemberwallBot?start=src_site" class="mt-7 rounded-xl text-center px-4 py-2.5 font-semibold transition
-        btn-primary text-white">
-        Start with Starter
-      </a>
-    </div>
-    
-    <div class="reveal glass rounded-2xl p-6 flex flex-col ">
-      
-      <h2 class="font-display text-xl font-semibold text-white">Pro</h2>
-      <div class="mt-3 font-display text-4xl font-bold text-white">3,750<span class="text-base font-normal text-zinc-500"> Stars / 30 days</span></div>
-      <p class="mt-2 text-sm text-zinc-400">For a growing community.</p>
-      <ul class="mt-5 space-y-2 text-sm text-zinc-300 flex-1">
-        <li>✓ Up to 385,000 Stars of member sales or 350 direct payments per 30 days</li><li>✓ No Memberwall line on your offer</li>
-      </ul>
-      <a href="https://t.me/MemberwallBot?start=src_site" class="mt-7 rounded-xl text-center px-4 py-2.5 font-semibold transition
-        border border-white/15 text-zinc-200 hover:bg-white/5">
-        Start with Pro
-      </a>
-    </div>
-    
-    <div class="reveal glass rounded-2xl p-6 flex flex-col ">
-      
-      <h2 class="font-display text-xl font-semibold text-white">Business</h2>
-      <div class="mt-3 font-display text-4xl font-bold text-white">7,600<span class="text-base font-normal text-zinc-500"> Stars / 30 days</span></div>
-      <p class="mt-2 text-sm text-zinc-400">For large communities.</p>
-      <ul class="mt-5 space-y-2 text-sm text-zinc-300 flex-1">
-        <li>✓ Up to 1,540,000 Stars of member sales or 1,500 direct payments per 30 days</li><li>✓ No Memberwall line on your offer</li>
-      </ul>
-      <a href="https://t.me/MemberwallBot?start=src_site" class="mt-7 rounded-xl text-center px-4 py-2.5 font-semibold transition
-        border border-white/15 text-zinc-200 hover:bg-white/5">
-        Start with Business
-      </a>
-    </div>
-    
+<article class="prose max-w-3xl mx-auto px-5 py-16 text-zinc-300 leading-relaxed">
+  
+  <div class="text-sm text-zinc-500">
+    <span class="text-white">English</span> · <a href="paid-telegram-group-without-stripe-ru.html" class="hover:text-white transition">Русский</a> · <a href="paid-telegram-group-without-stripe-uz.html" class="hover:text-white transition">O&#39;zbekcha</a>
   </div>
-  <p class="reveal mt-10 text-center text-sm text-zinc-500 max-w-2xl mx-auto">
-    Every plan has the same features. Plans differ only in how much your members can pay you per 30 days.
-    If you pass your plan's limit you get a warning and 7 days to upgrade; after that new sign-ups pause,
-    while existing members and renewals keep working. Members pay your own bot or pay you directly, so the money is always yours.
-  </p>
-</section>
+  
+  <h1 class="mt-3 font-display text-4xl font-bold text-white">A paid Telegram group without Stripe: let members pay you directly</h1>
+  <p class="mt-5 text-lg text-zinc-400">Stripe is not available in many countries, and many audiences pay with a local card app or a bank transfer. You can still run a paid group properly, without spreadsheets and without chasing people.</p>
+
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">How most people do it today</h2>
+  
+    <p class="mt-3">A member sends the money and then a screenshot in a private message. You check it, add them to the group by hand and write down the date somewhere. A month later you have to remember who is due, write to them, and remove those who did not pay. It works with ten members and falls apart with a hundred.</p>
+    
+  
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">The same thing, with the busywork removed</h2>
+  
+    <ol class="mt-3"><li>You write one line for your members: the price and where to pay, for example your card number, Payme, Click, PayPal or bank details.</li><li>A member opens your bot, sees that line, pays the usual way and sends the receipt to the bot as a photo or file.</li><li>The receipt arrives in your chat with two buttons: Approve and Reject.</li><li>When you approve, the bot sends the member a personal invite link that works once.</li><li>The bot reminds the member 3 days and 1 day before their time runs out, and removes them when it ends unless a new receipt was approved.</li></ol>
+    
+  
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">What it does not do</h2>
+  
+    <ul class="mt-3"><li>It does not check the payment for you. You look at the receipt and decide.</li><li>It is not a card checkout. Nobody types a card number into the bot.</li><li>Your money never passes through Memberwall. It goes from your member to you, as it does today.</li></ul>
+    
+  
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Setting it up</h2>
+  
+    <ol class="mt-3"><li>Create a bot with @BotFather and send its token to @MemberwallBot.</li><li>Add your bot to your group or channel as admin.</li><li>Send /payinfo followed by the price and where to pay.</li><li>Send /period to set how many days one payment covers, and /lang to choose the language your members see (English, Russian or Uzbek).</li></ol>
+    
+  
+    <p class="mt-3">It is free for up to 20 approved payments every 30 days. Above that there are flat monthly plans. Members who prefer Telegram Stars can pay that way in the same bot.</p>
+    
+  
+  
+
+  <div class="mt-10 glass rounded-2xl p-6 text-center">
+    <a href="https://t.me/MemberwallBot?start=src_nostripe_en" class="btn-primary inline-block rounded-xl px-6 py-3 text-white font-semibold">Open @MemberwallBot</a>
+    <p class="mt-3 text-sm text-zinc-400">Free to start. Everything is set up in the chat.</p>
+  </div>
+  
+</article>
 
   </main>
 

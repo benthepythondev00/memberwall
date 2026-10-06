@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Платная группа в Telegram без Stripe: участники платят вам напрямую · Memberwall</title>
+  <meta name="description" content="Как вести платную группу или канал в Telegram, если Stripe недоступен: участники платят картой, переводом или через местное приложение, вы подтверждаете чек, остальное делает бот." />
+  <meta name="theme-color" content="#07070b" />
+  <link rel="icon" href="static/favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="Memberwall: paid Telegram memberships" />
+  <meta property="og:description" content="Get paid for your Telegram channel. Access, renewals and removals run on their own." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/app.css?v=2" />
+  
+  <link rel="canonical" href="https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe-ru.html" />
+  <link rel="alternate" hreflang="en" href="https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe.html" />
+  <link rel="alternate" hreflang="ru" href="https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe-ru.html" />
+  <link rel="alternate" hreflang="uz" href="https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe-uz.html" />
+  
+  <style>
+    .prose ul, .prose ol { padding-left: 1.4rem; }
+    .prose ul { list-style: disc; } .prose ol { list-style: decimal; }
+    .prose li { margin-top: .5rem; }
+    .prose td, .prose th { padding: .75rem 1rem .75rem 0; vertical-align: top; }
+  </style>
+
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+  <div class="aurora"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="sticky top-0 z-50 backdrop-blur-xl bg-black/30 border-b border-white/5">
+    <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-display font-bold text-lg tracking-tight">
+        <svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true">
+          <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs>
+          <rect width="64" height="64" rx="16" fill="url(#lg)"/>
+          <path d="M32 15a10 10 0 0 0-10 10v4h-2a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h24a3 3 0 0 0 3-3V32a3 3 0 0 0-3-3h-2v-4a10 10 0 0 0-10-10zm-6 14v-4a6 6 0 0 1 12 0v4z" fill="#fff"/>
+        </svg>
+        <span>Member<span class="gradient-text">wall</span></span>
+      </a>
+      <div class="flex items-center gap-6 text-sm text-zinc-400">
+        <a href="pricing.html" class="hover:text-white transition">Pricing</a>
+        
+          <a href="https://t.me/MemberwallBot?start=src_site" class="hover:text-white transition">Open the bot</a>
+          <a href="https://t.me/MemberwallBot?start=src_site" class="btn-primary rounded-lg px-4 py-2 text-white font-medium">Start in Telegram</a>
+        
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-1">
+    
+    
+<article class="prose max-w-3xl mx-auto px-5 py-16 text-zinc-300 leading-relaxed">
+  
+  <div class="text-sm text-zinc-500">
+    <a href="paid-telegram-group-without-stripe.html" class="hover:text-white transition">English</a> · <span class="text-white">Русский</span> · <a href="paid-telegram-group-without-stripe-uz.html" class="hover:text-white transition">O&#39;zbekcha</a>
+  </div>
+  
+  <h1 class="mt-3 font-display text-4xl font-bold text-white">Платная группа в Telegram без Stripe: участники платят вам напрямую</h1>
+  <p class="mt-5 text-lg text-zinc-400">Stripe недоступен во многих странах, а аудитория часто платит переводом на карту или через местное платёжное приложение. Вести платную группу можно и так, без таблиц и без напоминаний вручную.</p>
+
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Как это обычно выглядит сейчас</h2>
+  
+    <p class="mt-3">Участник переводит деньги и присылает скриншот в личные сообщения. Вы проверяете, добавляете его в группу вручную и где-то записываете дату. Через месяц нужно вспомнить, у кого срок вышел, написать каждому и удалить тех, кто не оплатил. На десяти участниках это работает, на ста перестаёт.</p>
+    
+  
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">То же самое, но без рутины</h2>
+  
+    <ol class="mt-3"><li>Вы пишете для участников одну строку: цену и куда платить, например номер карты, Payme, Click, PayPal или реквизиты.</li><li>Участник открывает вашего бота, видит эту строку, платит привычным способом и отправляет боту чек: фото или файл.</li><li>Чек приходит вам в чат с двумя кнопками: подтвердить и отклонить.</li><li>После подтверждения бот отправляет участнику личную одноразовую ссылку-приглашение.</li><li>Бот напоминает за 3 дня и за 1 день до конца срока и удаляет участника, когда срок истёк, если новый чек не подтверждён.</li></ol>
+    
+  
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Чего он не делает</h2>
+  
+    <ul class="mt-3"><li>Он не проверяет платёж за вас. Вы смотрите на чек и решаете сами.</li><li>Это не оплата картой внутри бота. Никто не вводит номер карты в чат.</li><li>Ваши деньги не проходят через Memberwall. Они идут от участника к вам, как и сейчас.</li></ul>
+    
+  
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Настройка</h2>
+  
+    <ol class="mt-3"><li>Создайте бота в @BotFather и отправьте его токен в @MemberwallBot.</li><li>Добавьте своего бота в группу или канал администратором.</li><li>Отправьте /payinfo, а после него цену и куда платить.</li><li>Командой /period задайте, на сколько дней действует один платёж, а командой /lang выберите язык сообщений для участников (английский, русский или узбекский).</li></ol>
+    
+  
+    <p class="mt-3">Бесплатно до 20 подтверждённых платежей за 30 дней. Дальше действуют фиксированные месячные тарифы. Те, кому удобнее Telegram Stars, могут платить ими в том же боте.</p>
+    
+  
+  
+
+  <div class="mt-10 glass rounded-2xl p-6 text-center">
+    <a href="https://t.me/MemberwallBot?start=src_nostripe_ru" class="btn-primary inline-block rounded-xl px-6 py-3 text-white font-semibold">Открыть @MemberwallBot</a>
+    <p class="mt-3 text-sm text-zinc-400">Начать можно бесплатно. Всё настраивается прямо в чате.</p>
+  </div>
+  
+</article>
+
+  </main>
+
+  <footer class="border-t border-white/5 mt-10">
+    <div class="max-w-6xl mx-auto px-5 py-7 text-sm text-zinc-500">
+      <div class="flex flex-wrap gap-x-5 gap-y-2 mb-4 text-zinc-400">
+        <a href="pricing.html" class="hover:text-white transition">Pricing</a>
+        <a href="paid-telegram-channel-stars-ru.html" class="hover:text-white transition">Как сделать платный канал в Telegram с оплатой в Telegram Stars</a>
+        <a href="paid-telegram-group-without-stripe-ru.html" class="hover:text-white transition">Платная группа в Telegram без Stripe: участники платят вам напрямую</a>
+        <a href="tribute-alternative-ru.html" class="hover:text-white transition">Альтернатива Tribute: фиксированный тариф вместо 10%</a>
+        <a href="invitemember-alternative-ru.html" class="hover:text-white transition">Альтернатива InviteMember для небольших каналов и групп</a>
+        <a href="sublaunch-alternative-ru.html" class="hover:text-white transition">Альтернатива Sublaunch без процента с продаж</a>
+        
+      </div>
+      <div class="flex flex-wrap gap-2 justify-between">
+        <span class="font-display">Member<span class="gradient-text">wall</span></span>
+        <span>Paid Telegram memberships, automated.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+      if (window.matchMedia('(pointer:fine)').matches) {
+        document.querySelectorAll('.tilt').forEach((el) => {
+          el.addEventListener('pointermove', (e) => {
+            const r = el.getBoundingClientRect();
+            const x = (e.clientX - r.left) / r.width - 0.5;
+            const y = (e.clientY - r.top) / r.height - 0.5;
+            el.style.transform = `perspective(900px) rotateY(${x * 7}deg) rotateX(${-y * 7}deg)`;
+          });
+          el.addEventListener('pointerleave', () => { el.style.transform = ''; });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

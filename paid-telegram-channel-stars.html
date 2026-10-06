@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pricing · Memberwall</title>
-  <meta name="description" content="Memberwall sells paid access to your Telegram channel or group. Members pay in Telegram Stars; they are added, reminded and removed automatically." />
+  <title>How to create a paid Telegram channel with Telegram Stars · Memberwall</title>
+  <meta name="description" content="Step by step: charge a monthly fee for a private Telegram channel with Telegram Stars, what it costs you, and where the built-in way stops." />
   <meta name="theme-color" content="#07070b" />
   <link rel="icon" href="static/favicon.svg" type="image/svg+xml" />
   <meta property="og:title" content="Memberwall: paid Telegram memberships" />
@@ -15,6 +15,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="static/css/app.css?v=2" />
   
+  <link rel="canonical" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars.html" />
+  <link rel="alternate" hreflang="en" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars.html" />
+  <link rel="alternate" hreflang="ru" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars-ru.html" />
+  <link rel="alternate" hreflang="uz" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars-uz.html" />
+  
+  <style>
+    .prose ul, .prose ol { padding-left: 1.4rem; }
+    .prose ul { list-style: disc; } .prose ol { list-style: decimal; }
+    .prose li { margin-top: .5rem; }
+    .prose td, .prose th { padding: .75rem 1rem .75rem 0; vertical-align: top; }
+  </style>
+
 </head>
 <body class="min-h-screen flex flex-col antialiased">
   <div class="aurora"></div>
@@ -43,75 +55,53 @@
   <main class="flex-1">
     
     
-<section class="max-w-6xl mx-auto px-5 py-16">
-  <h1 class="reveal font-display text-4xl font-bold text-center">Flat pricing, paid in Telegram Stars</h1>
-  <p class="reveal mt-3 text-center text-zinc-400">A flat fee per 30 days. Never a percentage of what your members pay you.</p>
-
-  <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-    
-    <div class="reveal glass rounded-2xl p-6 flex flex-col ">
-      
-      <h2 class="font-display text-xl font-semibold text-white">Free</h2>
-      <div class="mt-3 font-display text-4xl font-bold text-white">0<span class="text-base font-normal text-zinc-500"> Stars / 30 days</span></div>
-      <p class="mt-2 text-sm text-zinc-400">Start and sign up your first members.</p>
-      <ul class="mt-5 space-y-2 text-sm text-zinc-300 flex-1">
-        <li>✓ Up to 23,000 Stars of member sales or 20 direct payments per 30 days</li><li>✓ Your own bot, automatic invites and removals</li><li>✓ A &#34;Powered by Memberwall&#34; line on your offer</li>
-      </ul>
-      <a href="https://t.me/MemberwallBot?start=src_site" class="mt-7 rounded-xl text-center px-4 py-2.5 font-semibold transition
-        border border-white/15 text-zinc-200 hover:bg-white/5">
-        Start with Free
-      </a>
-    </div>
-    
-    <div class="reveal glass rounded-2xl p-6 flex flex-col border-glow">
-      <div class="mb-3 text-xs font-semibold uppercase tracking-wider text-violet-300">Most popular</div>
-      <h2 class="font-display text-xl font-semibold text-white">Starter</h2>
-      <div class="mt-3 font-display text-4xl font-bold text-white">1,500<span class="text-base font-normal text-zinc-500"> Stars / 30 days</span></div>
-      <p class="mt-2 text-sm text-zinc-400">For a channel that earns.</p>
-      <ul class="mt-5 space-y-2 text-sm text-zinc-300 flex-1">
-        <li>✓ Up to 115,000 Stars of member sales or 100 direct payments per 30 days</li><li>✓ No Memberwall line on your offer</li>
-      </ul>
-      <a href="https://t.me/MemberwallBot?start=src_site" class="mt-7 rounded-xl text-center px-4 py-2.5 font-semibold transition
-        btn-primary text-white">
-        Start with Starter
-      </a>
-    </div>
-    
-    <div class="reveal glass rounded-2xl p-6 flex flex-col ">
-      
-      <h2 class="font-display text-xl font-semibold text-white">Pro</h2>
-      <div class="mt-3 font-display text-4xl font-bold text-white">3,750<span class="text-base font-normal text-zinc-500"> Stars / 30 days</span></div>
-      <p class="mt-2 text-sm text-zinc-400">For a growing community.</p>
-      <ul class="mt-5 space-y-2 text-sm text-zinc-300 flex-1">
-        <li>✓ Up to 385,000 Stars of member sales or 350 direct payments per 30 days</li><li>✓ No Memberwall line on your offer</li>
-      </ul>
-      <a href="https://t.me/MemberwallBot?start=src_site" class="mt-7 rounded-xl text-center px-4 py-2.5 font-semibold transition
-        border border-white/15 text-zinc-200 hover:bg-white/5">
-        Start with Pro
-      </a>
-    </div>
-    
-    <div class="reveal glass rounded-2xl p-6 flex flex-col ">
-      
-      <h2 class="font-display text-xl font-semibold text-white">Business</h2>
-      <div class="mt-3 font-display text-4xl font-bold text-white">7,600<span class="text-base font-normal text-zinc-500"> Stars / 30 days</span></div>
-      <p class="mt-2 text-sm text-zinc-400">For large communities.</p>
-      <ul class="mt-5 space-y-2 text-sm text-zinc-300 flex-1">
-        <li>✓ Up to 1,540,000 Stars of member sales or 1,500 direct payments per 30 days</li><li>✓ No Memberwall line on your offer</li>
-      </ul>
-      <a href="https://t.me/MemberwallBot?start=src_site" class="mt-7 rounded-xl text-center px-4 py-2.5 font-semibold transition
-        border border-white/15 text-zinc-200 hover:bg-white/5">
-        Start with Business
-      </a>
-    </div>
-    
+<article class="prose max-w-3xl mx-auto px-5 py-16 text-zinc-300 leading-relaxed">
+  
+  <div class="text-sm text-zinc-500">
+    <span class="text-white">English</span> · <a href="paid-telegram-channel-stars-ru.html" class="hover:text-white transition">Русский</a> · <a href="paid-telegram-channel-stars-uz.html" class="hover:text-white transition">O&#39;zbekcha</a>
   </div>
-  <p class="reveal mt-10 text-center text-sm text-zinc-500 max-w-2xl mx-auto">
-    Every plan has the same features. Plans differ only in how much your members can pay you per 30 days.
-    If you pass your plan's limit you get a warning and 7 days to upgrade; after that new sign-ups pause,
-    while existing members and renewals keep working. Members pay your own bot or pay you directly, so the money is always yours.
-  </p>
-</section>
+  
+  <h1 class="mt-3 font-display text-4xl font-bold text-white">How to create a paid Telegram channel with Telegram Stars</h1>
+  <p class="mt-5 text-lg text-zinc-400">Telegram has its own way to charge for a channel: a paid invite link. Members pay in Telegram Stars every 30 days and Telegram lets them in. Here is how to set it up, what to know before you start, and where a bot helps.</p>
+
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">The built-in way, step by step</h2>
+  
+    <ol class="mt-3"><li>Make your channel private.</li><li>Open the channel settings, go to the invite links and create a new link.</li><li>Turn on the monthly fee and enter your price in Stars.</li><li>Share that link. Anyone who opens it is asked to pay, and joins after paying.</li></ol>
+    
+  
+    <p class="mt-3">The menu names differ a little between the phone and desktop apps, but the option sits with the invite links in every one of them.</p>
+    
+  
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">What to know before you start</h2>
+  
+    <ul class="mt-3"><li>The period is always 30 days. There is no weekly, yearly or one-off option.</li><li>The Stars are credited to your channel, and you withdraw them through Telegram.</li><li>New Stars can take up to 21 days before you can withdraw them.</li><li>Members who buy Stars inside the phone app pay noticeably more than you receive, because the app stores take their share.</li><li>Telegram removes members whose subscription ends. You do not have to do it.</li></ul>
+    
+  
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Where the built-in way stops</h2>
+  
+    <ul class="mt-3"><li>It works for channels only, not for groups.</li><li>Members can only pay in Stars. If your audience pays by bank card, a local payment app or PayPal, they are left out.</li><li>You get no simple overview of how many members you have and what they paid this month.</li></ul>
+    
+  
+  
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">What Memberwall adds</h2>
+  
+    <p class="mt-3">Add @MemberwallBot to your channel as admin and send it your price. It creates the same paid link for you and keeps count: one message shows your members and the Stars they paid in the last 30 days.</p>
+    
+  
+    <p class="mt-3">For a group, or for members who cannot pay in Stars, you connect a bot of your own. Members then pay you directly, send the receipt to the bot, and you approve it with one tap. The bot sends each member a personal invite link, reminds them before their time runs out and removes them when it ends.</p>
+    
+  
+  
+
+  <div class="mt-10 glass rounded-2xl p-6 text-center">
+    <a href="https://t.me/MemberwallBot?start=src_stars_en" class="btn-primary inline-block rounded-xl px-6 py-3 text-white font-semibold">Open @MemberwallBot</a>
+    <p class="mt-3 text-sm text-zinc-400">Free to start. Everything is set up in the chat.</p>
+  </div>
+  
+</article>
 
   </main>
 
