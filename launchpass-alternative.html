@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>How to create a paid Telegram channel with Telegram Stars · Memberwall</title>
-  <meta name="description" content="Step by step: charge a monthly fee for a private Telegram channel with Telegram Stars, what it costs you, and where the built-in way stops." />
+  <title>A LaunchPass alternative for Telegram, built around cancelling and refunds · Memberwall</title>
+  <meta name="description" content="Memberwall compared with LaunchPass for paid Telegram channels and groups: fees, payment methods, how members cancel, who refunds, and when each one is the better choice." />
   <meta name="theme-color" content="#07070b" />
   <link rel="icon" href="static/favicon.svg" type="image/svg+xml" />
   <meta property="og:title" content="Memberwall: paid Telegram memberships" />
@@ -15,10 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="static/css/app.css?v=2" />
   
-  <link rel="canonical" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars.html" />
-  <link rel="alternate" hreflang="en" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars.html" />
-  <link rel="alternate" hreflang="ru" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars-ru.html" />
-  <link rel="alternate" hreflang="uz" href="https://benthepythondev00.github.io/memberwall/paid-telegram-channel-stars-uz.html" />
+  <link rel="canonical" href="https://benthepythondev00.github.io/memberwall/launchpass-alternative.html" />
+  <link rel="alternate" hreflang="en" href="https://benthepythondev00.github.io/memberwall/launchpass-alternative.html" />
   
   <style>
     .prose ul, .prose ol { padding-left: 1.4rem; }
@@ -57,53 +55,40 @@
     
 <article class="prose max-w-3xl mx-auto px-5 py-16 text-zinc-300 leading-relaxed">
   
-  <div class="text-sm text-zinc-500">
-    <span class="text-white">English</span> · <a href="paid-telegram-channel-stars-ru.html" class="hover:text-white transition">Русский</a> · <a href="paid-telegram-channel-stars-uz.html" class="hover:text-white transition">O&#39;zbekcha</a>
-  </div>
-  
-  <h1 class="mt-3 font-display text-4xl font-bold text-white">How to create a paid Telegram channel with Telegram Stars</h1>
-  <p class="mt-5 text-lg text-zinc-400">Telegram has its own way to charge for a channel: a paid invite link. Members pay in Telegram Stars every 30 days and Telegram lets them in. Here is how to set it up, what to know before you start, and where a bot helps.</p>
+  <h1 class="mt-3 font-display text-4xl font-bold text-white">A LaunchPass alternative for Telegram, built around cancelling and refunds</h1>
+  <p class="mt-5 text-lg text-zinc-400">LaunchPass sells paid access to Discord, Slack and Telegram communities through Stripe, and community owners like its support. On Telegram, Memberwall takes a different route: members pay in Telegram Stars or pay you directly, a subscriber stops the renewal with one tap, and you refund with one tap. Here is how the two differ, and where LaunchPass is the better tool.</p>
 
   
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">The built-in way, step by step</h2>
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Side by side</h2>
   
-    <ol class="mt-3"><li>Make your channel private.</li><li>Open the channel settings, go to the invite links and create a new link.</li><li>Turn on the monthly fee and enter your price in Stars.</li><li>Share that link. Anyone who opens it is asked to pay, and joins after paying.</li></ol>
     
-  
-    <p class="mt-3">The menu names differ a little between the phone and desktop apps, but the option sits with the invite links in every one of them.</p>
-    
-  
-  
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">What to know before you start</h2>
-  
-    <ul class="mt-3"><li>The period is always 30 days. There is no weekly, yearly or one-off option.</li><li>The Stars are credited to your channel, and you withdraw them through Telegram.</li><li>New Stars can take up to 21 days before you can withdraw them.</li><li>Members who buy Stars inside the phone app pay noticeably more than you receive, because the app stores take their share.</li><li>Telegram removes members whose subscription ends. You do not have to do it.</li></ul>
+    <div class="mt-3 overflow-x-auto">
+      <table class="w-full text-left text-sm">
+        <thead><tr class="border-b border-white/5 text-white"><th></th><th>LaunchPass</th><th>Memberwall</th></tr></thead>
+        <tbody><tr class="border-b border-white/5"><td class="text-white">Price</td><td>29 dollars a month plus 3.5% of sales, on top of Stripe&#39;s own fee. 14-day trial. The free plan cannot charge members</td><td>Flat plan by volume, with a free tier that can charge members. No percentage</td></tr><tr class="border-b border-white/5"><td class="text-white">How members pay</td><td>Cards, Apple Pay, Google Pay and crypto, through Stripe</td><td>Telegram Stars, or directly to you with a receipt you approve</td></tr><tr class="border-b border-white/5"><td class="text-white">Card checkout</td><td>Yes</td><td>No</td></tr><tr class="border-b border-white/5"><td class="text-white">Cancelling</td><td>Through LaunchPass, outside Telegram</td><td>One tap in your bot for Stars subscribers. Direct payments never renew on their own</td></tr><tr class="border-b border-white/5"><td class="text-white">Refunds</td><td>LaunchPass says refunds are handled by the group owner and that it is not involved</td><td>A Refund button under every Stars payment in your bot</td></tr><tr class="border-b border-white/5"><td class="text-white">Platforms</td><td>Discord, Slack, Telegram</td><td>Telegram only</td></tr></tbody>
+      </table>
+    </div>
     
   
   
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Where the built-in way stops</h2>
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">When LaunchPass is the better choice</h2>
   
-    <ul class="mt-3"><li>It works for channels only, not for groups.</li><li>Members can only pay in Stars. If your audience pays by bank card, a local payment app or PayPal, they are left out.</li><li>You get no simple overview of how many members you have and what they paid this month.</li></ul>
+    <ul class="mt-3"><li>Your members pay by card and you have a Stripe account.</li><li>You run a Discord or Slack community as well.</li><li>You want coupons, free trials or several price tiers.</li><li>You want someone to walk you through the setup on a call.</li></ul>
     
   
   
-  <h2 class="mt-10 font-display text-2xl font-semibold text-white">What Memberwall adds</h2>
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">When Memberwall fits better</h2>
   
-    <p class="mt-3">Add @MemberwallBot to your channel as admin and send it your price. It creates the same paid link for you and keeps count: one message shows your members and the Stars they paid in the last 30 days.</p>
-    
-  
-    <p class="mt-3">For a group, or for members who cannot pay in Stars, you connect a bot of your own. Members then pay you directly, send the receipt to the bot, and you approve it with one tap. The bot sends each member a personal invite link, reminds them before their time runs out and removes them when it ends.</p>
-    
-  
-    <p class="mt-3">With your own bot, members who subscribe in Stars can stop the renewal with one tap and keep their access until the paid period ends. You see every Stars payment as it arrives and can refund it with one tap.</p>
+    <ul class="mt-3"><li>Your community is on Telegram and your members already hold Stars, or pay by bank transfer or a local payment app.</li><li>You want members to be able to leave without writing to anyone.</li><li>You would rather pay a flat fee than 3.5% of every sale.</li><li>Stripe is not available to you.</li></ul>
     
   
   
 
   <div class="mt-10 glass rounded-2xl p-6 text-center">
-    <a href="https://t.me/MemberwallBot?start=src_stars_en" class="btn-primary inline-block rounded-xl px-6 py-3 text-white font-semibold">Open @MemberwallBot</a>
+    <a href="https://t.me/MemberwallBot?start=src_lp_en" class="btn-primary inline-block rounded-xl px-6 py-3 text-white font-semibold">Open @MemberwallBot</a>
     <p class="mt-3 text-sm text-zinc-400">Free to start. Everything is set up in the chat.</p>
   </div>
-  
+  <p class="mt-6 text-sm text-zinc-500">Figures for other products come from their public pages as of October 2026. Check their sites before you decide.</p>
 </article>
 
   </main>
