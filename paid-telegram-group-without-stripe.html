@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>A paid Telegram group without Stripe: let members pay you directly · Memberwall</title>
-  <meta name="description" content="How to run a paid Telegram group or channel when Stripe is not available: members pay by bank card, a local payment app or PayPal, you approve the receipt, and a bot does the rest." />
+  <title>Paid Telegram Group Link Without Stripe: 4 Ways Compared</title>
+  <meta name="description" content="Charge for a Telegram group without Stripe: members pay you by bank, card app or PayPal, you approve, a bot invites and removes. 0% cut. Free to 5 payments" />
   <meta name="theme-color" content="#07070b" />
   <link rel="icon" href="static/favicon.svg" type="image/svg+xml" />
-  <meta property="og:title" content="Memberwall: paid Telegram memberships" />
-  <meta property="og:description" content="Get paid for your Telegram channel. Access, renewals and removals run on their own." />
-  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Paid Telegram Group Link Without Stripe: 4 Ways Compared" />
+  <meta property="og:url" content="https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe.html" />
+  <meta property="og:description" content="Direct payment, Telegram Stars, commission bots and crypto bots compared: who takes a cut, when you get paid, and the manual work." />
+  <meta property="og:type" content="article" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -20,11 +21,77 @@
   <link rel="alternate" hreflang="ru" href="https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe-ru.html" />
   <link rel="alternate" hreflang="uz" href="https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe-uz.html" />
   
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://benthepythondev00.github.io/memberwall/#org",
+   "name": "Memberwall",
+   "url": "https://benthepythondev00.github.io/memberwall/",
+   "sameAs": [
+    "https://t.me/MemberwallBot"
+   ]
+  },
+  {
+   "@type": "Article",
+   "@id": "https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe.html#article",
+   "headline": "A paid Telegram group without Stripe: let members pay you directly",
+   "description": "Charge for a Telegram group without Stripe: members pay you by bank, card app or PayPal, you approve, a bot invites and removes. 0% cut. Free to 5 payments",
+   "url": "https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe.html",
+   "mainEntityOfPage": "https://benthepythondev00.github.io/memberwall/paid-telegram-group-without-stripe.html",
+   "inLanguage": "en",
+   "datePublished": "2026-10-06",
+   "dateModified": "2026-11-26",
+   "author": {
+    "@id": "https://benthepythondev00.github.io/memberwall/#org"
+   },
+   "publisher": {
+    "@id": "https://benthepythondev00.github.io/memberwall/#org"
+   },
+   "about": {
+    "@id": "https://benthepythondev00.github.io/memberwall/#app"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://benthepythondev00.github.io/memberwall/#app",
+   "name": "Memberwall",
+   "alternateName": "@MemberwallBot",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "Telegram",
+   "url": "https://t.me/MemberwallBot",
+   "description": "Telegram bot for paid groups and channels: members pay you directly or in Telegram Stars, you approve receipts, the bot sends one-time invite links, reminds and removes members when their time ends.",
+   "offers": {
+    "@type": "Offer",
+    "name": "Free",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free for up to 5 approved direct payments (or 5,000 Stars of member sales) every 30 days. Flat monthly plans above that, paid in Telegram Stars, never a percentage.",
+    "url": "https://benthepythondev00.github.io/memberwall/pricing.html"
+   },
+   "publisher": {
+    "@id": "https://benthepythondev00.github.io/memberwall/#org"
+   }
+  }
+ ]
+}
+  </script>
   <style>
     .prose ul, .prose ol { padding-left: 1.4rem; }
     .prose ul { list-style: disc; } .prose ol { list-style: decimal; }
     .prose li { margin-top: .5rem; }
     .prose td, .prose th { padding: .75rem 1rem .75rem 0; vertical-align: top; }
+    .compare th:first-child, .compare td:first-child { width: 11rem; }
+    @media (max-width: 640px) {
+      .compare thead { display: none; }
+      .compare tr { display: block; padding: 1rem 0; }
+      .compare td { display: block; padding: .2rem 0; width: auto !important; }
+      .compare td:first-child { font-size: 1rem; padding-bottom: .5rem; }
+      .compare td[data-label]::before { content: attr(data-label) ": "; color: #a1a1aa; }
+    }
+    .answer { border-left: 2px solid rgba(255,255,255,.18); padding-left: 1.1rem; }
   </style>
 
 </head>
@@ -63,8 +130,21 @@
   
   <h1 class="mt-3 font-display text-4xl font-bold text-white">A paid Telegram group without Stripe: let members pay you directly</h1>
   <p class="mt-5 text-lg text-zinc-400">Stripe is not available in many countries, and many audiences pay with a local card app or a bank transfer. You can still run a paid group properly, without spreadsheets and without chasing people.</p>
+  <p class="answer mt-6 text-base text-zinc-200">Short answer: let members pay you the way they already do (bank transfer, a local card app or PayPal), have them send the receipt to a bot, and approve it with one tap. The bot then sends a one-time paid group invite link, reminds members before their time ends and removes those who did not renew. No Stripe, and no percentage of your sales.</p>
+  <p class="mt-4 text-sm text-zinc-500">By the Memberwall team · Updated 26 November 2026</p>
 
   
+  <h2 class="mt-10 font-display text-2xl font-semibold text-white">Comparing ways to run a paid Telegram group without Stripe</h2>
+  <p class="mt-3">There are four common setups. They differ in who takes a cut, when the money reaches you and how much you do by hand.</p>
+  <div class="mt-3 overflow-x-auto">
+    <table class="compare w-full text-left text-sm">
+      <thead><tr class="border-b border-white/5 text-white"><th>Option</th><th>Platform cut</th><th>When you get paid</th><th>How members pay</th><th>Your manual work</th></tr></thead>
+      <tbody><tr class="border-b border-white/5"><td class="text-white">Direct payment, receipt you approve (Memberwall)</td><td data-label="Platform cut">None. Money goes from the member to you</td><td data-label="When you get paid">At once, by your bank, card app or PayPal</td><td data-label="How members pay">Any way you are paid today</td><td data-label="Your manual work">You look at each receipt and tap Approve. Free up to 5 approved payments every 30 days</td></tr><tr class="border-b border-white/5"><td class="text-white">Telegram Stars paid link</td><td data-label="Platform cut">App stores take their share when members buy Stars in the phone app. You receive about 0.013 USD per Star</td><td data-label="When you get paid">Stars can be held up to 21 days, then paid out in Toncoin through Fragment</td><td data-label="How members pay">Telegram Stars only</td><td data-label="Your manual work">None. Built-in links work for channels only, not groups</td></tr><tr class="border-b border-white/5"><td class="text-white">Commission bot (for example Tribute)</td><td data-label="Platform cut">10% of your sales</td><td data-label="When you get paid">On set payout dates (Tribute: the 10th and 25th, from 100 euros, dollars or USDT)</td><td data-label="How members pay">Bank card and crypto</td><td data-label="Your manual work">None. The platform checks payments and holds the money until payout</td></tr><tr class="border-b border-white/5"><td class="text-white">Crypto-only bot</td><td data-label="Platform cut">Varies by bot; check its pricing page</td><td data-label="When you get paid">Usually straight to your wallet</td><td data-label="How members pay">Crypto such as USDT</td><td data-label="Your manual work">None, but members need a crypto wallet, which many audiences do not have</td></tr></tbody>
+    </table>
+  </div>
+  <p class="mt-4">Pick direct payment if your members already pay you by bank or a local app and you do not mind one tap per payment. Pick a card or commission platform if members expect a one-tap card checkout and you accept the cut. Memberwall also takes Stars in the same bot, so members who prefer Stars are not left out.</p>
+  <p class="mt-4 text-sm text-zinc-500">Stars figures come from Telegram&#39;s Bot Developer Terms; Tribute figures from its public pages. Checked November 2026. Check each site before you decide.</p>
+
   <h2 class="mt-10 font-display text-2xl font-semibold text-white">How most people do it today</h2>
   
     <p class="mt-3">A member sends the money and then a screenshot in a private message. You check it, add them to the group by hand and write down the date somewhere. A month later you have to remember who is due, write to them, and remove those who did not pay. It works with ten members and falls apart with a hundred.</p>
